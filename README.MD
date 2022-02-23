@@ -350,3 +350,6 @@ S1,/home/Dongfang/Project/211125/211125_NS500154_1304_AHMYHWBGXK/outs/fastq_path
 S5,/home/Dongfang/Project/211125/211125_NS500154_1304_AHMYHWBGXK/outs/fastq_path,any,vdj-b,1
 S9,/home/Dongfang/Project/211125/211125_NS500154_1304_AHMYHWBGXK/outs/fastq_path,any,gene expression,1
 ```
+## Notes
+Most of cellranger related content is from 10X genomics offical website. I just combined them together and add my personal analysis workflow.
+This document is used to record what I did.
