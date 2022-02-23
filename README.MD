@@ -335,7 +335,7 @@ The ```cellranger multi``` pipeline improves cell calls in the V(D)J dataset by 
 
 multi-config-template.csv example
 
-![](image/mult-config.png)
+![](image/mult_config.png)
 
 ```
 # this is a comment,,,,
