@@ -233,6 +233,8 @@ Cell Ranger's pipelines analyze sequencing data produced from Chromium single ce
 
 - 2.Run ```cellranger vdj``` on FASTQ files produced by cellranger mkfastq.
 
+- 3.Run ```cellranger multi``` to combine result from T cells, B cells, and Gex.
+
 
 ## Run cellranger mkfastq
 First, follow the instructions on running cellranger mkfastq to generate FASTQ files. For example, if the flowcell serial number was HAWT7ADXX, then cellranger mkfastq will output FASTQ files in HAWT7ADXX/outs/fastq_path.
@@ -321,6 +323,7 @@ Once cellranger vdj has successfully completed, you can browse the resulting sum
 
 ## multi 
 ```cellranger mulit``` is used to analyze V(D)J+GEX data from the same sample
+
 ```
 /home/Dongfang/Pipeline/software/cellranger-6.1.1/cellranger multi --id=PBMC1 --csv=multi-config-template_S1.csv
 ```
