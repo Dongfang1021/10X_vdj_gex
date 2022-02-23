@@ -1,4 +1,4 @@
-#Cell Ranger V(D)J Algorithms Overview
+# Cell Ranger V(D)J Algorithms Overview
 ![](image/read-layout.png)
 
 The figure above shows 10x V(D)J read-pairs aligned to an assembled contig, illustrating the structure of the read data. One to several UMIs are captured for each V(D)J chain. A round of enrichment PCR targeting the 5′ end to the C-region, followed by enzymatic fragmentation results in a pool of molecules originating from the same transcript. The molecules carry the same 10x barcode and UMI sequences, but with different insert lengths, resulting in different R2 start points. The diversity of R2 start points gives complete coverage of the targeted portion of each transcript, which is typically ~650bp.
