@@ -323,6 +323,9 @@ Once cellranger vdj has successfully completed, you can browse the resulting sum
 
 ## multi 
 ```cellranger mulit``` is used to analyze V(D)J+GEX data from the same sample
+The 5' Chromium Single Cell Immune Profiling Solution with Feature Barcode technology enables simultaneous profiling of V(D)J repertoire, cell surface protein, antigen specificity, and gene expression (GEX) data. The multi pipeline analyzes these multiple library types together, enabling more consistent cell calling between the V(D)J and GEX data.
+```cellranger multi``` takes FASTQ files from ```cellranger mkfastq``` or ```bcl2fastq``` for any combination of 5' Gene Expression, Feature Barcode (cell surface protein or antigen), and V(D)J libraries from a single GEM well. It performs alignment, filtering, barcode counting, and UMI counting on the Gene Expression and/or Feature Barcode libraries. It also performs sequence assembly and paired clonotype calling on the V(D)J libraries. Additionally, the cell calls provided by the gene expression data are used to improve the cell calls from the V(D)J library. ```cellranger multi``` is the recommended pipeline for processing FASTQ files generated using the 5' the Immune Profiling Solution with Feature Barcode technology.
+The ```cellranger multi``` pipeline improves cell calls in the V(D)J dataset by discarding any cells that were not also called in the corresponding 5' GEX dataset. By assigning cells that are called in the V(D)J results but not in the 5' GEX results as background GEMs in the V(D)J data, the cellranger multi pipeline mitigates any overcalling issues that may arise in BCR and TCR data. This improved cell calling is only possible when both 5' GEX and V(D)J libraries were sequenced from the same sample.
 
 ```
 /home/Dongfang/Pipeline/software/cellranger-6.1.1/cellranger multi --id=PBMC1 --csv=multi-config-template_S1.csv
